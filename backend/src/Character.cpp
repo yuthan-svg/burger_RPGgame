@@ -14,6 +14,6 @@ Character::Character(std::string name, int maxHp, int baseDamage, int maxStamina
 bool Character::isAlive() const {
     return hp > 0;
 }
-bool Character::canUse(const Ability& ability) const {
-    return stamina >= ability.staminaCost;
+bool Character::canUse(const Abillity& ability) const {
+    return stamina >= ability.getStaminaCost();
 }

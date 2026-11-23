@@ -18,7 +18,7 @@
     <ClCompile Include="..\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\Ability.cpp">
+    <ClCompile Include="..\src\Abillity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="..\src\Effect.cpp">
@@ -39,12 +39,15 @@
     <ClCompile Include="..\src\SaveManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\AbilityDatabase.cpp">
+    <ClCompile Include="..\src\AbillityDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\AttackAbillity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\Ability.h">
+    <ClInclude Include="..\include\Abillity.h">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="..\include\Effect.h">
@@ -65,7 +68,10 @@
     <ClInclude Include="..\include\SaveManager.h">
       <Filter>Source Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\include\AbilityDatabase.h">
+    <ClInclude Include="..\include\AbillityDatabase.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\AttackAbillity.h">
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>

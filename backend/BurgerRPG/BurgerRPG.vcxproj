@@ -19,8 +19,9 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\Ability.cpp" />
-    <ClCompile Include="..\src\AbilityDatabase.cpp" />
+    <ClCompile Include="..\src\Abillity.cpp" />
+    <ClCompile Include="..\src\AbillityDatabase.cpp" />
+    <ClCompile Include="..\src\AttackAbillity.cpp" />
     <ClCompile Include="..\src\Battle.cpp" />
     <ClCompile Include="..\src\Campaign.cpp" />
     <ClCompile Include="..\src\Character.cpp" />
@@ -30,8 +31,9 @@
     <ClCompile Include="..\src\SaveManager.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\include\Ability.h" />
-    <ClInclude Include="..\include\AbilityDatabase.h" />
+    <ClInclude Include="..\include\Abillity.h" />
+    <ClInclude Include="..\include\AbillityDatabase.h" />
+    <ClInclude Include="..\include\AttackAbillity.h" />
     <ClInclude Include="..\include\Battle.h" />
     <ClInclude Include="..\include\Campaign.h" />
     <ClInclude Include="..\include\Character.h" />

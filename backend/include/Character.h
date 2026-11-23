@@ -3,7 +3,7 @@
 #include <vector>
 #include <memory>
 #include "Effect.h"
-#include "Ability.h"
+#include "Abillity.h"
 
 class Character {
 private:
@@ -16,7 +16,7 @@ private:
     int staminaRegen;
     int block;
 
-    std::vector<int> abilityIds;
+    std::vector<int> abillityIds;
     std::vector<std::unique_ptr<Effect>> activeEffects;
 
 public:
@@ -24,7 +24,7 @@ public:
 
     // Стан та ресурси
     bool isAlive() const;
-    bool canUse(const Ability& ability) const;
+    bool canUse(const Abillity& ability) const;
     void spendStamina(int amount);
 
     // Бойові дії
