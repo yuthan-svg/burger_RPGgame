@@ -3,5 +3,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="BurgerRPG.vcxproj" />
+  <Project Path="BurgerRPG.vcxproj" Id="1cca7aba-3229-4979-8ce0-f2ece9afff9b" />
 </Solution>

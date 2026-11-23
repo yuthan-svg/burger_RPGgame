@@ -20,6 +20,7 @@ struct EffectInfo {
     EffectType type;
     int power;
     float duration;
+    float tickInterval;
 };
 
 class Ability {
@@ -40,7 +41,7 @@ public:
     int getStaminaCost() const;
     int getPower() const;
     ActionType getType() const;
-    EffectType getEfType();
+    std::vector<EffectInfo> getEffects() const;
     virtual ~Ability() = default;
 };
 
