@@ -5,6 +5,8 @@
 #include "Effect.h"
 #include "Abillity.h"
 
+static constexpr int MAX_ABILITIES = 5;
+
 class Character {
 private:
     std::string name;
@@ -26,7 +28,7 @@ public:
     bool isAlive() const;
     bool canUse(const Abillity& ability) const;
     void spendStamina(int amount);
-
+        
     // Бойові дії
     void takeDamage(int amount);
     void heal(int amount);

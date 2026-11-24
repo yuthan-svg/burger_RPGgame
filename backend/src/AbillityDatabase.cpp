@@ -11,10 +11,16 @@ void AbillityDatabase::init()
 const Abillity& AbillityDatabase::getById(int id) 
 {
 	auto it = allAbillity.find(id);
-	if (it == allAbillity.end() || !it->second) {
-		throw std::out_of_range("Ability with requested id not found in AbillityDatabase");
+	if (it == allAbillity.end() || it->second == nullptr) {
+		throw std::invalid_argument("No abillity on this id");
 	}
+	
 	return *(it->second);
+}
+
+bool AbillityDatabase::exists(int id) {
+	auto it = allAbillity.find(id);
+	return it != allAbillity.end() && it->second != nullptr;
 }
 
 void AbillityDatabase::add(std::unique_ptr<Abillity> abillity)
