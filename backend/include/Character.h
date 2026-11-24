@@ -45,7 +45,7 @@ public:
     const std::vector<int>& getAbilityIds() const;
 
     // Геттери для інтерфейсу та бою
-    std::string getName() const;
+   const std::string& getName() const;
     int getHp() const;
     int getMaxHp() const;
     int getBaseDamage() const;

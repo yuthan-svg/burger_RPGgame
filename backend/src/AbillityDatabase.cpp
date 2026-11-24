@@ -12,7 +12,7 @@ const Abillity& AbillityDatabase::getById(int id)
 {
 	auto it = allAbillity.find(id);
 	if (it == allAbillity.end() || it->second == nullptr) {
-		throw std::invalid_argument("No abillity on this id");
+		throw std::out_of_range("No abillity on this id");
 	}
 	
 	return *(it->second);
@@ -31,7 +31,7 @@ void AbillityDatabase::add(std::unique_ptr<Abillity> abillity)
 	int id = abillity->getId();
 
 	if (allAbillity.find(id) != allAbillity.end()) {
-		throw std::invalid_argument("No id in allAbillity");
+		throw std::invalid_argument("Ability with this id already exists");
 	}
 	allAbillity.emplace(id, std::move(abillity));
 }
