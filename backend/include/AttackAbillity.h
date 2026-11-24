@@ -3,8 +3,8 @@
 #include "Abillity.h"
 
 class AttackAbillity : public Abillity {
+public:
 	AttackAbillity(int id, std::string name, std::string word, int power, int staminaCost,
 		std::vector<EffectInfo> appliedEffect);
-
-	std::vector<std::string> use(Character& user, Character& target) override;
+	void use(Character& user, Character& target) override;
 };

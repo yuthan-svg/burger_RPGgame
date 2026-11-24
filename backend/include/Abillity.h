@@ -21,7 +21,8 @@ protected:
     std::vector<EffectInfo> appliedEffect;
 public:
     Abillity(int id, std::string name, std::string word, int power, int staminaCost,  std::vector<EffectInfo> appliedEffect);
-    virtual std::vector<std::string> use(Character& user, Character& target) = 0;
+    //метод який просто виконує а не знімає ману і не перевіряє
+    virtual void use(Character& user, Character& target) = 0; // тип повернення можна змінити на std::vector<структура, яка повертає як рядок даних шо ми зробили в методі>
     int getId() const;
     std::string getName() const;
     std::string getWord() const;

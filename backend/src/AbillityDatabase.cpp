@@ -1,9 +1,11 @@
 #include "AbillityDatabase.h"
 
+
 std::map<int, std::unique_ptr<Abillity>> AbillityDatabase::allAbillity;
 
 void AbillityDatabase::init()
 {
+	add(std::make_unique<AttackAbillity>(1, "attack", "attack", 10, 25, std::vector<EffectInfo>{}));
 }
 
 const Abillity& AbillityDatabase::getById(int id) 
@@ -15,15 +17,15 @@ const Abillity& AbillityDatabase::getById(int id)
 	return *(it->second);
 }
 
-void AbillityDatabase::add(std::unique_ptr<Abillity> abillity) 
-{	
+void AbillityDatabase::add(std::unique_ptr<Abillity> abillity)
+{
 	if (!abillity) {
-		return;
+		throw std::invalid_argument("No abillity");
 	}
 	int id = abillity->getId();
 
 	if (allAbillity.find(id) != allAbillity.end()) {
-		return;
+		throw std::invalid_argument("No id in allAbillity");
 	}
 	allAbillity.emplace(id, std::move(abillity));
 }

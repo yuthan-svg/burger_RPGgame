@@ -4,6 +4,7 @@
 #include <memory>
 #include <stdexcept>
 #include "Abillity.h"
+#include "AttackAbillity.h"
 
 class AbillityDatabase {
 private:
